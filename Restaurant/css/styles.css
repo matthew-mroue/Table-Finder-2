@@ -1,0 +1,150 @@
+body {
+  margin: 0 auto;
+  font-family: 'Roboto Mono', monospace;
+}
+.title {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  text-align: center;
+}
+h2 {
+  font-family: 'Rubik Mono One', sans-serif;
+  font-weight: 700;
+  color: #E34E45;
+}
+h3 {
+  font-family: 'Roboto Mono', monospace;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.modul {
+  margin-top: 40px;
+  width: 400px;
+  height: 420px;
+  align-items: center;
+  position: fixed;
+  background-color:white;
+  box-shadow: 0px 0px 31px 1px rgba(0,0,0,0.3);
+  display: none;
+  border-radius: 10px;
+  z-index: 10;
+}
+.modulContent {
+  height: 100%;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.tooltip {
+  position: absolute;
+  background-color: #ADAAAA;
+  margin-top: 20px;
+  display: none;
+  flex-direction: column;
+  text-align: left;
+  border-radius: 10px;
+  padding: 5px 10px;
+  border: 2px solid black;
+}
+p {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+}
+.fa-times {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+input {
+  border-width: 0px;
+  border: none;
+  border-bottom: 1px solid #CCC;
+  padding: 15px 0;
+  outline: none;
+  font-size: 1em;
+}
+.save {
+  background-color: #008000;
+  color: white;
+  padding: 15px 0;
+  font-size: 1em;
+  transition: all .2s ease-in-out;
+  box-shadow: 0px 5px 15px 1px rgba(0,0,0,0.3);
+}
+.save:hover {
+  transform: scale(0.975);
+}
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E1D7D4;
+}
+section {
+  padding: 5px 10px;
+  height: 100vh;
+  width: 100vw;
+  max-width: 360px;
+  max-height: 360px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  z-index: 2;
+}
+.container {
+  width: 25%;
+  height: 25%;
+  margin: 0px 15px;
+  text-align: center;
+}
+.table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #CCC;
+}
+.available {
+  transition: all .1s ease-in-out;
+}
+.available:hover {
+  transform: scale(1.1);
+  border: 2px solid#E34E45;
+}
+.reserved {
+  background-color: #ADAAAA;
+  cursor: not-allowed;
+}
+.tooltip {
+  background-color: gray;
+}
+@media screen and (min-width: 620px) {
+  section {
+    max-width: 420px;
+    max-height: 420px;
+    padding: 5px 60px;
+  }
+  .modul {
+    max-width: 600px;
+    margin-top: 5px;
+    width: 600px;
+  }
+}
